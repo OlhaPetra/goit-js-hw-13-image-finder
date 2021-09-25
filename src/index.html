@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Find img</title>
     <link
       rel="stylesheet"
@@ -11,6 +12,9 @@
       crossorigin="anonymous"
     />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
   </head>
   <body>
     <form class="search-form" id="search-form">
@@ -22,18 +26,19 @@
           autocomplete="off"
           id="searchQuery"
           placeholder="Search images..."
+          class="input"
         />
       </div>
-      <button type="submit">Искать</button>
+      <button type="submit" class="btn btn-primary search-btn">Искать</button>
     </form>
 
-    <ul class="images"></ul>
-
-    <button type="button" data-action="load-more">
-      <span role="status" aria-hidden="true"></span> <span>Показать ещё</span>
+    <ul class="list"></ul>
+    
+    <button type="button" data-action="load-more" class="button btn btn-primary" disabled>
+      <span class="spinner-border spinner-border-sm spinner is-hidden" role="status" aria-hidden="true"></span> <span class="label" >Показать ещё</span>
     </button>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <!-- Скрипт идёт последним в разметке -->
     <script src="./index.js"></script>
   </body>
 </html>
