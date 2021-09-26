@@ -14,6 +14,14 @@ html {
   list-style: none;
 }
 
+.btn.load-more-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .conteiner {
   width: 100%;
   padding-left: 25px;
@@ -35,22 +43,7 @@ html {
   padding: 10px;
 }
 
-.button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.search-btn {
-  margin-left: 15px;
-  justify-content: center;
-}
-
-.button.is-hiden {
-  display: none;
-}
-
-.spiner.is-hiden {
+.is-hidden {
   display: none;
 }
 
@@ -67,11 +60,14 @@ html {
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .photo-card {
   display: flex;
   flex-flow: column;
+  height: 450px;
 }
 
 .item {
@@ -83,6 +79,21 @@ html {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.img-thumb {
+  height: 380px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .stats {
@@ -103,6 +114,14 @@ html {
   margin-right: 40px;
 }
 
-.is-hiden {
+.spinner-border.is-hidden {
   display: none;
+}
+
+.load-more-btn.is-hidden {
+  display: none;
+}
+
+.search-btn {
+  margin-left: 15px;
 }

@@ -15,13 +15,13 @@ export default class LoadMoreButton {
     
     enable() {
         this.refs.button.disabled = false;
-        this.refs.label.textContent = 'Show more';
+        this.refs.label.textContent = 'Показать ещё';
         this.refs.spinner.classList.add('is-hidden');
     }
 
     disabled() {
         this.refs.button.disabled = true;
-        this.refs.label.textContent = 'Loading...';
+        this.refs.label.textContent = 'Загрузка...';
         this.refs.spinner.classList.remove('is-hidden');
     }
     

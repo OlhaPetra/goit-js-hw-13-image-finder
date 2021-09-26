@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
   </head>
   <body>
     <div class="conteiner">
@@ -26,22 +25,22 @@
           name="query"
           autocomplete="off"
           id="searchQuery"
-          placeholder="Search images..."
+          placeholder="Введите текст..."
           class="input"
         />
       </div>
       <button type="submit" class="btn btn-primary search-btn">Искать</button>
     </form>
 
-    <ul class="list images"></ul>
+    <ul class="list images" id="go-scroll"></ul>
     <div class="more-load-btn">
-    <button type="button" data-action="load-more" class=" btn btn-primary search-btn button" disabled>
+    <button type="button" data-action="load-more" class=" btn btn-primary load-more-btn is-hidden" disabled>
       <span class="spinner-border spinner-border-sm spinner is-hidden" role="status" aria-hidden="true"></span> <span class="label" >Показать ещё</span>
     </button>
     </div>
     </div>
 
-    <!-- Скрипт идёт последним в разметке -->
     <script src="./index.js"></script>
+
   </body>
 </html>
