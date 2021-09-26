@@ -39,7 +39,6 @@ function onSearch(e) {
 
 function onLoad() {
   loadImg();
-  scrollEnd();
 }
 
 function loadImg() {
@@ -55,7 +54,8 @@ function loadImg() {
     } 
     else {
       appendImgMarkup(imgs);
-      loadMoreBtn.enable();
+       loadMoreBtn.enable();
+         scrollEnd();
     }
   });
 }
